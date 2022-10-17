@@ -15,10 +15,13 @@
     <p id="1"></p>
     <p id="2"></p>
     <p id="3"></p>
+    <p id="4"></p>
 
 
     <script>
+        // an array called cars
         const cars = ["skoda", "nissan", "mazda"];
+        // insert objects into an array by their index
         cars[4] = "ford";
         cars[3] = "holden"
         document.getElementById("1").innerHTML = cars;
@@ -26,6 +29,10 @@
         document.getElementById("2").innerHTML = car;
         cars[0] = "new car";
         document.getElementById("3").innerHTML = cars[0];
+        // an array with names for its objects
+        const person = { firstName: "joshua", lastName: "FOX", age: 49 };
+        // call an object by its name
+        document.getElementById("4").innerHTML = person.age;                                                                                         
     </script>
 
 </body>
