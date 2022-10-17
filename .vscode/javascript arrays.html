@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>javascript Arrays</p>
+    <p id="1"></p>
+    <p id="2"></p>
+    <p id="3"></p>
+
+
+    <script>
+        const cars = ["skoda", "nissan", "mazda"];
+        cars[4] = "ford";
+        cars[3] = "holden"
+        document.getElementById("1").innerHTML = cars;
+        let car = cars[0];
+        document.getElementById("2").innerHTML = car;
+        cars[0] = "new car";
+        document.getElementById("3").innerHTML = cars[0];
+    </script>
+
+</body>
+
+</html>
