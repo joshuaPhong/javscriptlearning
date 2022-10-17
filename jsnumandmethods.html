@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="1"></p>
+    <p id="2"></p>
+    <p id="3"></p>
+    <p id="4"></p>
+    <p id="5"></p>
+    <p id="6"></p>
+    <p id="7"></p>
+    <p id="8"></p>
+    <p id="9"></p>
+    <p id="10"></p>
+    <p id="11"></p>
+    <p id="12"></p>
+    <script>
+        let x = 3.14;
+        let y = 3;
+        let z = x + y;
+        let exnum = 123e2;
+        document.getElementById("1").innerHTML = x + "<br>" + y + "<br>" + z + "<br>" + exnum;
+        // adding two string concatenates
+        let s1 = "10";
+        let s2 = "20";
+        document.getElementById("2").innerHTML = s1 + " " + s2;
+        // toString
+        let toString1 = 123;
+        toString.toString();
+        document.getElementById("3").innerHTML = toString1.toString() + "<br>" + s1.toString();
+        // toExponential() returns a string. the number is rounded and written using exponential notation. takes an argument to define the number of decimal points
+        let ex = 123.23456;
+        document.getElementById("4").innerHTML = ex.toExponential(2);
+        document.getElementById("5").innerHTML = ex.toExponential(4);
+        // toFixed() returns a string with a fixed number of decimal places. takes an argument to defin the number of decimal places
+        document.getElementById("6").innerHTML = ex.toFixed(2);
+        document.getElementById("7").innerHTML = ex.toFixed(4);
+        // toPrecision() returns a string with a specified length
+        document.getElementById("8").innerHTML = ex.toPrecision(2);
+        document.getElementById("9").innerHTML = ex.toPrecision(4);
+        // global javascript methods
+        // Number() takes an argumant and converts it.
+        document.getElementById("10").innerHTML = Number(true) + "<br>" + Number(false) + "<br>" + Number("10") + "<br>" + Number(ex);
+        // using the Number() method on dates. converts dates in to numbers
+
+     
+     
