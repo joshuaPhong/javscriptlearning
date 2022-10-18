@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="myFunction()">Press Me</button>
+    <p id="1"></p>
+    <p id="2"></p>
+
+
+    <script>
+        const people3 = ["non", "fred"];
+
+        document.getElementById("1").innerHTML = people3;
+people3.push("rod");
+document.getElementById("2").innerHTML = people3;
+
+        function myFunction() {
+            people3.push("josh");
+            document.getElementById("1").innerHTML = people3;
+        }
+    </script>
+</body>
+
+</html>

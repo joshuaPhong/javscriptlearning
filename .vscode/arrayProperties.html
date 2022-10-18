@@ -15,6 +15,12 @@
     <p id="1"></p>
     <p id="2"></p>
     <p id="3"></p>
+    <p id="4"></p>
+
+    <p id="5"></p>
+    <button onclick="
+        myFunction2()">try it</button>
+    <p id="6"></p>
     <script>
         const people = ["josh", "guy", "roche", "ashton", "mum", "dad"];
         // .length returns the number of objects in the array
@@ -30,8 +36,26 @@
         }
         text += "</ul>";
         document.getElementById("3").innerHTML = text;
-        // foreach loop
-        
+        // foreach loop calls a function for each array element
+
+        let people2 = "<ul>";
+        people.forEach(myFunction);
+        people2 += "<ul>";
+
+        document.getElementById("4").innerHTML = people2;
+
+        function myFunction(value) {
+            people2 += "<li>" + value + "<li>";
+        }
+
+        // using the push() to add elements to an array
+        function myFunction2() {
+            people.push("kyle");
+        }
+        people.push("kenny");
+        document.getElementById("5").innerHTML = people;
+    //    document.getElementById("6").innerHTML = people;
+
     </script>
 </body>
 
