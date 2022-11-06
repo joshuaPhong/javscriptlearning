@@ -12,9 +12,10 @@
 
 <body>
     <button onclick="myFunction()">Press Me</button>
+    <button onclick="myFunction2()">Press Me Too</button>
     <p id="1"></p>
     <p id="2"></p>
-
+<p id="3"></p>
 
     <script>
         const people3 = ["non", "fred"];
@@ -22,10 +23,15 @@
         document.getElementById("1").innerHTML = people3;
 people3.push("rod");
 document.getElementById("2").innerHTML = people3;
-
+// useing the push() method
         function myFunction() {
             people3.push("josh");
             document.getElementById("1").innerHTML = people3;
+        }
+// using length as an index
+        function myFunction2() {
+            people3[people3.length]= "james";
+             document.getElementById("3").innerHTML = people3;
         }
     </script>
 </body>
